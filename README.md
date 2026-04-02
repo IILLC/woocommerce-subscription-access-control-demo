@@ -1,10 +1,10 @@
-#WooCommerce Subscription Access Control Demo
+# WooCommerce Subscription Access Control Demo
 
 TEST
 
 A small portfolio plugin demonstrating subscription-aware access control in WordPress.
 
-#Overview
+# Overview
 
 This plugin shows a simple pattern for protecting content based on membership or subscription state.
 
@@ -15,7 +15,7 @@ It adds a shortcode, [wsacd_protected], that can be used to wrap protected conte
 
 If the user qualifies, the protected content is shown. If not, the plugin displays an access message with a link to upgrade or subscribe.
 
-#What This Demonstrates
+# What This Demonstrates
 
 This repository is intended as a focused example of:
 
@@ -26,7 +26,7 @@ This repository is intended as a focused example of:
 -maintainable naming and organization
 -collision-safe prefixed WordPress code
 
-#Demo Scenario
+# Demo Scenario
 
 This demo models a common real-world requirement:
 
@@ -44,7 +44,7 @@ Wrap protected content like this:
 This content is only visible to qualified users.
 [/wsacd_protected]
 
-#Demo Assumptions
+# Demo Assumptions
 
 This starter example assumes:
 
@@ -52,13 +52,13 @@ This starter example assumes:
 -an annual subscription product is the primary paid access path
 -product IDs, tag IDs, and exact entitlement labels are placeholders for demonstration and should be adapted to the target environment
 
-#Naming Convention
+# Naming Convention
 
 This project uses the iillc_ / IILLC_ prefix for functions, classes, and constants.
 
 This reflects my long-standing production practice of prefixing custom code to reduce collisions in WordPress environments and to make authored code easier to identify during maintenance.
 
-#Scope
+# Scope
 
 This is a portfolio-focused demonstration, not a full production membership platform.
 
@@ -70,7 +70,7 @@ It intentionally does not include:
 -multi-tier entitlement mapping
 -complete Memberium or WooCommerce setup automation
 
-#Installation
+# Installation
 1. Install WordPress
 2. Install and activate the required dependencies for your test environment
 3. Copy this plugin into wp-content/plugins/
@@ -78,7 +78,7 @@ It intentionally does not include:
 5. Add the shortcode to a test page or post
 6. Adjust the demo IDs and access rules for your environment
 
-#Why This Repo Exists
+# Why This Repo Exists
 
 Most of my production work has involved implementing custom business rules inside live WordPress systems rather than building plugins for public release.
 
