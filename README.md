@@ -1,7 +1,5 @@
 # WooCommerce Subscription Access Control Demo
 
-TEST
-
 A small portfolio plugin demonstrating subscription-aware access control in WordPress.
 
 # Overview
@@ -10,8 +8,8 @@ This plugin shows a simple pattern for protecting content based on membership or
 
 It adds a shortcode, [wsacd_protected], that can be used to wrap protected content on posts or pages. When the shortcode is rendered, the plugin checks whether the current user is logged in and whether they qualify for access through one of two paths:
 
--an active annual subscription
--a designated founder / founding member access flag
+- an active annual subscription
+- a designated founder / founding member access flag
 
 If the user qualifies, the protected content is shown. If not, the plugin displays an access message with a link to upgrade or subscribe.
 
@@ -19,12 +17,12 @@ If the user qualifies, the protected content is shown. If not, the plugin displa
 
 This repository is intended as a focused example of:
 
--WordPress plugin structure
--custom access-control logic
--conditional content rendering
--integration-oriented business rules
--maintainable naming and organization
--collision-safe prefixed WordPress code
+- WordPress plugin structure
+- custom access-control logic
+- conditional content rendering
+- integration-oriented business rules
+- maintainable naming and organization
+- collision-safe prefixed WordPress code
 
 # Demo Scenario
 
@@ -36,7 +34,7 @@ This demo models a common real-world requirement:
 
 The plugin keeps this intentionally narrow so the access logic is easy to review.
 
-#Example Usage
+# Example Usage
 
 Wrap protected content like this:
 
