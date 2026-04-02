@@ -4,7 +4,7 @@ A small portfolio plugin demonstrating subscription-aware access control in Word
 
 ## Overview
 
-This plugin shows a simple pattern for protecting content based on membership or subscription state. It includes WooCommerce Subscription checks as the primary but also includes an optional Memberium connections for fine tuning of user access through Memberium tags.
+This plugin demonstrates a simple pattern for protecting content based on subscription state. It uses WooCommerce Subscriptions as the primary access check and optionally supports Memberium tag-based access overrides.
 
 It adds a shortcode, [wsacd_protected], that can be used to wrap protected content on posts or pages. When the shortcode is rendered, the plugin checks whether the current user is logged in and whether they qualify for access through one of two paths:
 
@@ -90,6 +90,7 @@ This starter example assumes:
 - a “VIP” access flag exists in Memberium
 - an annual subscription product is the primary paid access path
 - product IDs, tag IDs, and exact entitlement labels are placeholders for demonstration and should be adapted to the target environment
+- example output styling assumes Bootstrap-compatible theme styles
 
 ## Naming Convention
 

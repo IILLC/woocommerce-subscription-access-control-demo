@@ -64,8 +64,8 @@ class IILLC_Admin {
 
     public function sanitize_options( $input ) {
         $out = array();
-        $out['default_product_ids'] = isset( $input['default_product_ids'] ) ? sanitize_text_field( $input['default_product_ids'] ) : '';
-        $out['default_memberium_tag'] = isset( $input['default_memberium_tag'] ) ? sanitize_textarea_field( $input['default_memberium_tag'] ) : '';
+        $out['default_product_ids'] = isset( $input['default_product_ids'] ) ? sanitize_textarea_field( $input['default_product_ids'] ) : '';
+        $out['default_memberium_tag'] = isset( $input['default_memberium_tag'] ) ? sanitize_text_field( $input['default_memberium_tag'] ) : '';
         $out['default_upgrade_url'] = isset( $input['default_upgrade_url'] ) ? esc_url_raw( $input['default_upgrade_url'] ) : '';
         return $out;
     }

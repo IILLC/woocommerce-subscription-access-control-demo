@@ -113,22 +113,35 @@ class IILLC_Plugin {
             return $check;
         }
 
+        $tag  = trim( (string) $tag );
         $keys = [ 'memberium_tags', 'memb_tags', 'memberium_user_tags', 'tags', 'memberium_tag' ];
+
         foreach ( $keys as $k ) {
             $val = get_user_meta( $user_id, $k, true );
-            if ( ! $val ) {
+            if ( empty( $val ) ) {
                 continue;
             }
-            if ( is_array( $val ) && in_array( $tag, $val ) ) {
-                return true;
+
+            if ( is_array( $val ) ) {
+                $stored_tags = array_filter( array_map( 'trim', $val ) );
+
+                if ( in_array( $tag, $stored_tags, true ) ) {
+                    return true;
+                }
             }
-            if ( is_string( $val ) && stripos( $val, $tag ) !== false ) {
-                return true;
+
+            if ( is_string( $val ) ) {
+                $stored_tags = preg_split( '/[\s,|]+/', $val );
+                $stored_tags = array_filter( array_map( 'trim', $stored_tags ) );
+
+                if ( in_array( $tag, $stored_tags, true ) ) {
+                    return true;
+                }
             }
         }
+
         return false;
     }
-
 
 
 
