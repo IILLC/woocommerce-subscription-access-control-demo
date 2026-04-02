@@ -1,5 +1,7 @@
 #WooCommerce Subscription Access Control Demo
 
+TEST
+
 A small portfolio plugin demonstrating subscription-aware access control in WordPress.
 
 #Overview
