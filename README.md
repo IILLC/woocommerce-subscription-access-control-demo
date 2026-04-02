@@ -70,8 +70,7 @@ It intentionally does not include:
 
 # Installation
 1. Install WordPress
-2. Install and activate the required dependencies for your test environment
-- Requires WooCommerce, Woo Subscriptions, and Memberium
+2. Install and activate the required dependencies for your test environment. This plugin requires WooCommerce, Woo Subscriptions, and Memberium.
 3. Copy this plugin into wp-content/plugins/
 4. Activate the plugin
 5. Add the shortcode to a test page or post
@@ -82,3 +81,15 @@ It intentionally does not include:
 Most of my production work has involved implementing custom business rules inside live WordPress systems rather than building plugins for public release.
 
 This repository extracts one of those patterns into a small, sanitized example that is easier for hiring teams and technical reviewers to evaluate.
+
+---
+
+## Author
+
+This repository is part of my work in advanced WooCommerce access control and membership systems.
+
+**Troy Whitney**
+- 🌐 https://troywhitney.me
+- 🏢 https://imageinnovationsllc.com
+
+For consulting or custom WordPress/WooCommerce development, feel free to reach out.
