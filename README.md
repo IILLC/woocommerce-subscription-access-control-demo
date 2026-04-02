@@ -76,7 +76,7 @@ This approach is useful for consistent site-wide access rules.
 
 ## Access Logic
 
-Access is granted if the current user meets at least one of the following conditions:
+Access is granted if the current user is logged in and meets at least one of the following conditions:
 
 - Has an active subscription matching the configured product ID
 - Has the required Memberium tag
@@ -96,8 +96,6 @@ This starter example assumes:
 This project uses the iillc_ / IILLC_ prefix for functions, classes, and constants.
 
 This reflects my long-standing production practice of prefixing custom code to reduce collisions in WordPress environments and to make authored code easier to identify during maintenance.
-
-## Scope
 
 ## Scope
 
