@@ -65,7 +65,7 @@ class IILLC_Admin {
     public function sanitize_options( $input ) {
         $out = array();
         $out['default_product_ids'] = isset( $input['default_product_ids'] ) ? sanitize_text_field( $input['default_product_ids'] ) : '';
-        $out['default_memberium_tag'] = isset( $input['default_memberium_tag'] ) ? sanitize_text_field( $input['default_memberium_tag'] ) : '';
+        $out['default_memberium_tag'] = isset( $input['default_memberium_tag'] ) ? sanitize_textarea_field( $input['default_memberium_tag'] ) : '';
         $out['default_upgrade_url'] = isset( $input['default_upgrade_url'] ) ? esc_url_raw( $input['default_upgrade_url'] ) : '';
         return $out;
     }
@@ -100,7 +100,7 @@ class IILLC_Admin {
             <h1><?php esc_html_e( 'Subscription Access Settings', 'iillc-wsacd' ); ?></h1>
             <?php if ( ! empty( $missing ) ) : ?>
                 <div class="notice notice-warning inline">
-                    <p><?php echo sprintf( esc_html__( 'This plugin may not work correctly unless these plugins are active: %s.', 'iillc-wsacd' ), esc_html( implode( ', ', $missing ) ) ); ?></p>
+                    <p><?php echo sprintf( esc_html__( 'This plugin will not work correctly unless these plugins are active: %s.', 'iillc-wsacd' ), esc_html( implode( ', ', $missing ) ) ); ?></p>
                 </div>
             <?php endif; ?>
             <form method="post" action="options.php">

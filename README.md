@@ -4,12 +4,12 @@ A small portfolio plugin demonstrating subscription-aware access control in Word
 
 ## Overview
 
-This plugin shows a simple pattern for protecting content based on membership or subscription state.
+This plugin shows a simple pattern for protecting content based on membership or subscription state. It includes WooCommerce Subscription checks as the primary but also includes an optional Memberium connections for fine tuning of user access through Memberium tags.
 
 It adds a shortcode, [wsacd_protected], that can be used to wrap protected content on posts or pages. When the shortcode is rendered, the plugin checks whether the current user is logged in and whether they qualify for access through one of two paths:
 
 - an active annual subscription
-- a designated founder / founding member access flag
+- a designated "VIP" access flag
 
 If the user qualifies, the protected content is shown. If not, the plugin displays an access message with a link to upgrade or subscribe.
 
@@ -29,7 +29,7 @@ This repository is intended as a focused example of:
 This demo models a common real-world requirement:
 
 - some users receive access through a paid annual subscription
-- some users receive access through a separate founder-member entitlement
+- some users receive access through a separate VIP entitlement
 - protected content should only render for users who meet one of those conditions
 
 The plugin keeps this intentionally narrow so the access logic is easy to review.
@@ -103,7 +103,7 @@ This is a focused demonstration plugin, not a full production membership system.
 
 ## Installation
 1. Install WordPress
-2. Install and activate the required dependencies for your test environment. This plugin requires WooCommerce, Woo Subscriptions, and Memberium.
+2. Install and activate the required dependencies for your test environment. This plugin requires WooCommerce, Woo Subscriptions, and optionally Memberium.
 3. Copy this plugin into wp-content/plugins/
 4. Activate the plugin
 5. Add the shortcode to a test page or post

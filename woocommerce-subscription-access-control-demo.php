@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WooCommerce Subscription Access Control Demo
- * Description: Demonstrates custom access control logic for WooCommerce subscriptions, including tag-based restrictions and checkout validation.
+ * Description: Demonstrates shortcode-based access control for WooCommerce subscriptions with optional Memberium tag overrides.
  * Version: 1.0.0
  * Author: Troy Whitney
  * Author URI: https://troywhitney.me
