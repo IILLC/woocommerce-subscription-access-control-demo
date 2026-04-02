@@ -28,9 +28,9 @@ This repository is intended as a focused example of:
 
 This demo models a common real-world requirement:
 
--some users receive access through a paid annual subscription
--some users receive access through a separate founder-member entitlement
--protected content should only render for users who meet one of those conditions
+- some users receive access through a paid annual subscription
+- some users receive access through a separate founder-member entitlement
+- protected content should only render for users who meet one of those conditions
 
 The plugin keeps this intentionally narrow so the access logic is easy to review.
 
@@ -46,9 +46,9 @@ This content is only visible to qualified users.
 
 This starter example assumes:
 
--a “Founding Member” access flag exists in Memberium
--an annual subscription product is the primary paid access path
--product IDs, tag IDs, and exact entitlement labels are placeholders for demonstration and should be adapted to the target environment
+- a “Founding Member” access flag exists in Memberium
+- an annual subscription product is the primary paid access path
+- product IDs, tag IDs, and exact entitlement labels are placeholders for demonstration and should be adapted to the target environment
 
 # Naming Convention
 
@@ -62,15 +62,16 @@ This is a portfolio-focused demonstration, not a full production membership plat
 
 It intentionally does not include:
 
--full subscription lifecycle management
--billing workflows
--advanced admin configuration
--multi-tier entitlement mapping
--complete Memberium or WooCommerce setup automation
+- full subscription lifecycle management
+- billing workflows
+- advanced admin configuration
+- multi-tier entitlement mapping
+- complete Memberium or WooCommerce setup automation
 
 # Installation
 1. Install WordPress
 2. Install and activate the required dependencies for your test environment
+- Requires WooCommerce, Woo Subscriptions, and Memberium
 3. Copy this plugin into wp-content/plugins/
 4. Activate the plugin
 5. Add the shortcode to a test page or post
