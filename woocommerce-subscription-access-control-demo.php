@@ -1,9 +1,11 @@
 <?php
 /**
  * Plugin Name: WooCommerce Subscription Access Control Demo
- * Description: Demo plugin for subscription-based access control.
+ * Description: Demonstrates custom access control logic for WooCommerce subscriptions, including tag-based restrictions and checkout validation.
  * Version: 1.0.0
- * Author: Your Name
+ * Author: Troy Whitney
+ * Author URI: https://troywhitney.me
+ * Plugin URI: https://imageinnovationsllc.com
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
