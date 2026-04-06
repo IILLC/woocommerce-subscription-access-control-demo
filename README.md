@@ -133,3 +133,6 @@ For consulting or custom WordPress/WooCommerce development, feel free to reach o
 This repository is a portfolio/demo code sample intended to illustrate a WordPress/WooCommerce access-control pattern.
 
 It is not a production-ready public plugin, and it is not provided as an actively supported installable product.
+
+## License
+Copyright (c) 2026 Troy Whitney - All Rights Reserved
